@@ -37,6 +37,22 @@ joce.pen = rg.Pen('green', 3)
 
 size = 100
 
-for k in range(7):
+for k in range(6):
     joce.draw_circle(size)
-    size = size - 1
+    size = size - 5
+
+art = rg.SimpleTurtle('turtle')
+art.speed = 10
+art.pen = rg.Pen('purple',5)
+
+for k in range(10):
+    art.draw_regular_polygon(8,20)
+
+    art.pen_up()
+    art.left(50)
+    art.forward(30)
+    art.right(75)
+
+    art.pen_down()
+
+window.close_on_mouse_click()
